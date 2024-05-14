@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default function RestaurantsList({restaurants}){    
     return (
         <div className="grid">
-            {restaurants.map((restaurant)=>(
+            {restaurants?.map((restaurant)=>(
                 <RestaurantItem key={restaurant.id} {...restaurant} />
             ))}
         </div>
